@@ -1,0 +1,23 @@
+.logo {
+  @include font("Raleway", normal, 700, 26px, 1.19, 0.03em);
+  color: var(--main-text-color);
+}
+
+.logo--header {
+  display: block;
+  margin-right: 93px;
+}
+
+.logo__img {
+  display: inline-block;
+  color: var(--brand-color);
+}
+
+.logo--footer {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.logo__text--footer {
+  color: var(--bgc-additional);
+}

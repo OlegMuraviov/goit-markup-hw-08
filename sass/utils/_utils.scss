@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container {
+  margin: 0px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+.hidden {
+  opacity: 0;
+  font-size: 0px;
+  line-height: 0px;
+  display: none;
+  color: transparent;
+  visibility: hidden;
+  overflow: hidden;
+  width: 0px;
+  height: 0px;
+}
+// подчеркивание на текущей странице
+.current-link {
+  color: var(--hover-color);
+  border-bottom: 4px solid var(--hover-color);
+}

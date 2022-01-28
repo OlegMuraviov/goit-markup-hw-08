@@ -1,0 +1,93 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--bgc-total);
+}
+.footer__wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.adress {
+  @extend %list;
+}
+.adress__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.adress__map {
+  @include font("Roboto", normal, 400, 14px, 1.71, 0.03em);
+  color: var(--bgc-additional);
+}
+.adress__contacts {
+  @include font("Roboto", normal, 400, 14px, 1.71, 0.03em);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-mid {
+  margin-left: 70px;
+
+  &__title {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    @include font("Roboto", normal, 700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+
+    color: var(--bgc-button-portfolio);
+  }
+  &__item {
+    width: 44px;
+    height: 44px;
+  }
+  &__item + &__item {
+    margin-left: 10px;
+  }
+}
+
+.footer-subscribe {
+  margin-left: 93px;
+  fill: black;
+}
+.footer-subscribe__label {
+  display: block;
+  margin-bottom: 20px;
+
+  @include font("Roboto", normal, 700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+
+  color: var(--bgc-button-portfolio);
+}
+
+.user-email-input {
+  width: 360px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px;
+
+  color: var(--bgc-button-portfolio);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--bgc-total);
+}
+
+.subscribe {
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+
+.submit_wrap {
+  position: absolute;
+  margin-left: 10px;
+}
+.subscribe__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-130%, 50%);
+
+  fill: var(--bgc-button-portfolio);
+}

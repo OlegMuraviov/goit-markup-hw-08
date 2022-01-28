@@ -1,0 +1,43 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #f5f4fa;
+}
+.team__title {
+  display: block;
+  margin-bottom: 50px;
+  text-align: center;
+
+  @include font("Roboto", normal, 700, 36px, 1.17, 0.03em);
+  color: var(--main-text-color);
+}
+
+.team__list {
+  @extend %list;
+  @extend %middleflex;
+}
+
+.team__item + .team__item {
+  margin-left: 30px;
+}
+.team__wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team__name {
+  margin-bottom: 10px;
+
+  text-align: center;
+  @include font("Roboto", normal, 700, 16px, 1.19, 0.03em);
+  color: var(--main-text-color);
+}
+.team__position {
+  margin-bottom: 16px;
+
+  text-align: center;
+  @include font("Roboto", normal, 400, 16px, 1.19, 0.03em);
+  color: var(--additional-text-color);
+}

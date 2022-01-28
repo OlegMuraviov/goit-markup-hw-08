@@ -1,0 +1,37 @@
+.wwd {
+  padding-bottom: 94px;
+
+  &__title {
+    margin-bottom: 50px;
+
+    text-align: center;
+    @include font("Roboto", normal, 700, 36px, 1.17, 0.03em);
+    color: var(--main-text-color);
+  }
+}
+.wwd__list {
+  @extend %list;
+  @extend %middleflex;
+}
+.wwd__item + .wwd__item {
+  margin-left: 30px;
+}
+
+.example {
+  position: relative;
+}
+
+.example__description {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  text-align: center;
+  @include font("Roboto", normal, 700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}

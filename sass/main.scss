@@ -1,0 +1,29 @@
+//  БАЗОВЫЕ И СЛУЖЕБНЫЕ СТИЛИ
+@import "./utils/reset"; // RESET
+@import "./utils/variables";
+@import "./utils/utils"; // HIDEN / CONTAINER
+
+// PLACEHOLDERS + MIXSINS
+@import "./utils/placeholders"; // PLACEHOLDERS
+@import "./utils/mixin"; // MIXINS
+
+//   КОМПОНЕНТЫ
+@import "./components/logo"; // ЛОГОТИП
+@import "./components/navigation"; // NAV MENU
+@import "./components/social"; // SOCIAL LINKS
+@import "./components/buttons"; // КНОПКИ
+
+// CONTENT
+@import "./layout/header"; //  ХЕДЕР
+//   КОНТЕНТ СТРАНИЦЫ WEB-STUDIO
+@import "./pages/webstudio/hero";
+@import "./pages/webstudio/advantages";
+@import "./pages/webstudio/wwd";
+@import "./pages/webstudio/team";
+@import "./pages/webstudio/clients";
+//   КОНТЕНТ СТРАНИЦЫ PORTFOLIO
+@import "./pages/portfolio/portfolio";
+// ФУТЕР
+@import "./layout/footer"; //   ФУТЕР
+//   МОДАЛЬНЫЕ ОКНА
+@import "./layout/modal";
