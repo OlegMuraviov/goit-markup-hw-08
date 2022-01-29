@@ -61,10 +61,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin: -15px;
 }
 
 .galery__item {
-  margin: 0 auto;
+  margin: 15px;
   position: relative;
   width: 100%;
   border: 1px solid #eeeeee;

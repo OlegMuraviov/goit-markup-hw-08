@@ -828,10 +828,11 @@ main {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin: -15px;
 }
 
 .galery__item {
-  margin: 0 auto;
+  margin: 15px;
   position: relative;
   width: 100%;
   border: 1px solid #eeeeee;
