@@ -8,20 +8,29 @@
     @include font("Roboto", normal, 700, 36px, 1.17, 0.03em);
     color: var(--main-text-color);
   }
+
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: contents;
+  }
 }
 .wwd__list {
   @extend %list;
   @extend %middleflex;
 }
+
 .wwd__item + .wwd__item {
   margin-left: 30px;
 }
 
-.example {
+.wwd__wrap {
   position: relative;
 }
+.wwd__image {
+  width: 370px;
+}
 
-.example__description {
+.wwd__description {
   position: absolute;
   bottom: 0;
 

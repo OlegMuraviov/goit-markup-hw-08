@@ -1,33 +1,50 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .clients__title {
+  margin-bottom: 30px;
   display: inline-block;
-  margin-bottom: 50px;
   text-align: center;
 
   @include font("Roboto", normal, 700, 36px, 1.17, 0.03em);
   color: var(--main-text-color);
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
+
 .clients__list {
+  margin: -15px;
   @extend %list;
   @extend %middleflex;
+  flex-wrap: wrap;
 }
 .clients__item {
-  width: 170px;
+  width: calc((100% - 60px) / 2);
   height: 92px;
-}
-.clients__item + .clients__item {
-  margin-left: 30px;
+  margin: 15px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 90px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 180px) / 6);
+  }
 }
 
 .clients__link {
-  @extend %middleflex;
-  width: 100%;
-  height: 100%;
-
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   cursor: pointer;

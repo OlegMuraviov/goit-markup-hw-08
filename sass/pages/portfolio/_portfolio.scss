@@ -1,16 +1,35 @@
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .switch {
   @extend %list;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
 
-.switch__item + .switch__item {
-  margin-left: 8px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+.switch__item:not(:last-child) {
+  margin-right: 8px;
+}
+.switch__item:nth-child(-n + 3) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
 .switch__btn {
@@ -38,26 +57,30 @@
 
 .galery {
   @extend %list;
+  margin: -15px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .galery__item {
   position: relative;
-  margin-right: 30px;
+  width: 100%;
+  margin: 15px;
 
   border: 1px solid #eeeeee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:nth-child(3n) {
-    margin-right: 0px;
-  }
-  &:nth-child(-n + 6) {
-    margin-bottom: 30px;
-  }
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 3);
   }
 }
 
@@ -65,6 +88,9 @@
   display: block;
   position: relative;
   overflow: hidden;
+}
+.galery__image {
+  width: 100%;
 }
 
 .galery__description {
