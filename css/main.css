@@ -820,21 +820,20 @@ main {
 }
 
 .galery {
-  margin: -15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .galery__item {
+  margin: 0 auto;
   position: relative;
   width: 100%;
-  margin: 15px;
   border: 1px solid #eeeeee;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -860,12 +859,12 @@ main {
 }
 
 .galery__thumb {
-  display: block;
   position: relative;
   overflow: hidden;
 }
 
 .galery__image {
+  display: block;
   width: 100%;
 }
 
