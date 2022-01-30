@@ -106,6 +106,7 @@
     display: block;
     @include font("Roboto", normal, 500, 34px, 1.17, 0.02em);
     color: #2196f3;
+    margin: 0;
     margin-bottom: 32px;
   }
 }
@@ -114,6 +115,7 @@
     display: block;
     @include font("Roboto", normal, 500, 24px, 1.17, 0.02em);
     color: #757575;
+    margin: 0;
     margin-bottom: 64px;
   }
 }

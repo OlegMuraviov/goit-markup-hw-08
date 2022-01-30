@@ -481,6 +481,7 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: #2196f3;
+    margin: 0;
     margin-bottom: 32px;
   }
 }
@@ -495,6 +496,7 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: #757575;
+    margin: 0;
     margin-bottom: 64px;
   }
 }
