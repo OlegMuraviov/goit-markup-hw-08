@@ -85,8 +85,10 @@
 }
 .social-mobile {
   display: none;
+  max-width: 100%;
   @media screen and (max-width: 767px) {
     display: flex;
+    flex-wrap: wrap;
   }
   &__item:first-child {
     padding-right: 10px;
