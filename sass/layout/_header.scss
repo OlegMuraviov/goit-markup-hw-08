@@ -34,7 +34,13 @@
   padding: 0;
   border: none;
   background-color: #ffffff;
+
+  &:hover,
+  &:focus .icon-menu {
+    fill: var(--hover-color);
+  }
 }
+
 .header__button-close {
   display: inline-flex;
   margin: 0;
@@ -43,6 +49,10 @@
   background-color: #ffffff;
   @media screen and (min-width: 768px) {
     display: none;
+  }
+  &:hover,
+  &:focus .icon-cross {
+    fill: var(--hover-color);
   }
 }
 
@@ -66,15 +76,6 @@
     margin-bottom: 0;
     margin-left: 84px;
     margin-right: 0;
-    // &__item {
-    //   display: flex;
-    //   justify-content: right;
-    //   align-items: center;
-    //   border: 1px;
-    // }
-    // &__item + &__item {
-    //   margin-left: 50px;
-    // }
   }
   @media screen and (min-width: 1200px) {
     display: flex;

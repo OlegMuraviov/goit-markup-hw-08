@@ -386,6 +386,11 @@ ul {
   background-color: #ffffff;
 }
 
+.header__button:hover,
+.header__button:focus .icon-menu {
+  fill: var(--hover-color);
+}
+
 .header__button-close {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -400,6 +405,11 @@ ul {
   .header__button-close {
     display: none;
   }
+}
+
+.header__button-close:hover,
+.header__button-close:focus .icon-cross {
+  fill: var(--hover-color);
 }
 
 .header__button.is-open .icon-cross {
