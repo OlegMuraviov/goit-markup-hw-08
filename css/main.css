@@ -334,6 +334,7 @@ ul {
 
 .header {
   position: relative;
+  min-width: 320px;
 }
 
 .header__wrap {
@@ -1150,6 +1151,7 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--bgc-total);
+  min-width: 320px;
 }
 
 @media screen and (max-width: 1199px) {
