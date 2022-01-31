@@ -46,6 +46,10 @@
   text-transform: uppercase;
   color: #212121;
 
+  @media screen and (min-width: 767px) {
+    text-align: start;
+  }
+
   @media screen and (min-width: 1200px) {
     @include font("Roboto", normal, 700, 14px, 1.17, 0.03em);
     text-align: start;

@@ -755,6 +755,12 @@ img {
   color: #212121;
 }
 
+@media screen and (min-width: 767px) {
+  .advantages__title {
+    text-align: start;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .advantages__title {
     font-family: "Roboto";
