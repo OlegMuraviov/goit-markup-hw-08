@@ -604,12 +604,12 @@ img {
   text-align: center;
   min-width: 320px;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-optimized.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-optimized.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #c4c4c4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/webstudio/hero-bg/bg-desktop.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/webstudio/hero-bg/bg-desktop.jpg);
 }
 
 @media screen and (min-width: 1200px) {
