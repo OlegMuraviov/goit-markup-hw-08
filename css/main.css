@@ -341,12 +341,12 @@ img {
 }
 
 .header {
+  position: relative;
   min-width: 320px;
   border-bottom: 1px solid #ececec;
 }
 
 .header__wrap {
-  position: relative;
   margin: 0 auto;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -1226,14 +1226,6 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer__wrap {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
