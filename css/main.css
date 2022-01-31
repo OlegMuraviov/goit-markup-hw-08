@@ -64,6 +64,12 @@ ul {
   list-style-type: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   margin: 0px auto;
   padding-left: 15px;
@@ -659,7 +665,6 @@ ul {
 
 @media screen and (min-width: 768px) {
   .advantages__list {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
