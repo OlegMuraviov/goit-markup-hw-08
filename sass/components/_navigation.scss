@@ -65,7 +65,7 @@
     background-color: var(--hover-color);
   }
 }
-.navigation__item:not(:last-child) {
+.navigation__item {
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
   }
